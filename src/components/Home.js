@@ -12,10 +12,10 @@ function Home(){
     }
     return(
         <div className='Menu'>
-                <h1 className='white'>Enter user name</h1>
+                <h1 className='white'>Enter your name</h1>
                 <Input required placeholder='Flamboyant Kumar' onChange={handleNamechange}/>
 
-            <h2 className='white'>Select Category</h2>
+            <h3 className='white'>Select Category</h3>
             <Image.Group size='small'>
                 <Image src={require('../images/quiztypes/1.png').default} onClick={()=>{setCategory(1);setSelected({first: true, second: false,third: false})}} disabled={selected.first} style={{width: '150px', height: '150px'}} rounded/>
                 <Image src={require('../images/quiztypes/2.png').default} onClick={()=>{setCategory(2);setSelected({first: false, second: true,third: false})}} disabled={selected.second} style={{width: '150px', height: '150px'}} rounded/>
